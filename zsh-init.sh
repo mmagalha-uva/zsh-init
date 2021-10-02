@@ -14,6 +14,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 curl -Lo ~/.local/share/fonts/MesloLGS\ NF\ Regular.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 
+curl -Lo ~/.p10k.zsh https://raw.githubusercontent.com/mmagalha-uva/zsh-init/main/.p10k.zsh
 
+curl -Lo ~/.zshrc https://raw.githubusercontent.com/mmagalha-uva/zsh-init/main/.zshrc
 
+sudo chsh -s /usr/bin/zsh $USERNAME
 
