@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Install inital packages"
-sudo dnf install -y 
+sudo dnf install -y \
 git \
 curl \
 terraform \
