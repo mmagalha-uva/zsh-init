@@ -3,7 +3,6 @@ echo "Install inital packages"
 sudo dnf install -y \
 git \
 curl \
-terraform \
 python3-pip \
 zsh \
 util-linux-user
