@@ -2,12 +2,9 @@
 
 echo "Install inital packages"
 {
-    sudo dnf install -y \
-    git \
-    curl \
-    python3-pip \
-    zsh \
-    util-linux-user
+    case $(lsb_release -si) in
+    Ubuntu)
+        apt install -y git curl python3-pip zsh util-linux-user ;;
 } 2>&1 | tee /tmp/outputs.log
 
 echo "Install zsh customizations"
