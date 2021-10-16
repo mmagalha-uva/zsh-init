@@ -5,6 +5,9 @@ echo "Install inital packages"
     case $(lsb_release -si) in
     Ubuntu)
         apt install -y git curl python3-pip zsh util-linux-user ;;
+    Fedora)
+        dnf install -y git curl python3-pip zsh util-linux-user ;;
+    esac    
 } 2>&1 | tee /tmp/outputs.log
 
 echo "Install zsh customizations"
